@@ -1,9 +1,9 @@
 pyg = "ay"
-original = raw_input("Enter a word:")
+original = raw_input("Enter a word to translate it into pig latin:\n")
 if len(original) > 0 and original.isalpha():
 	word = original.lower()
 	first = word[0]
-	new_word= word[1:len(new_word)]
+	new_word = word[1:len(new_word)] + first + pyg
 	print new_word
 else:
-	print "You didn't type a word, dummy! Words only have letters, no numbers or spaces!"
+	print "You didn't type a word, dummy! Words only have letters, no numbers or spaces, please."
